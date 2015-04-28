@@ -50,7 +50,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Folder Include="HttpWrapper\" />
     <Folder Include="TsEngine\" />
     <Folder Include="TsEngine\HttpWrapper\" />
     <Folder Include="TsEngine\Utils\" />
