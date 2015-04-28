@@ -47,6 +47,7 @@
     <Compile Include="TsEngine\Serials\TsSerialHelper.cs" />
     <Compile Include="TsEngine\Categories\TsCategoryHelper.cs" />
     <Compile Include="TsEngine\Serials\TsSerialListItem.cs" />
+    <Compile Include="TsEngine\Serials\TsSerialsList.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
