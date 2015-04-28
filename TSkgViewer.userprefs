@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TSkgViewer/TsEngine/HttpWrapper/HttpWrapper.cs">
+    <Files>
+      <File FileName="TSkgViewer/Program.cs" Line="13" Column="34" />
+      <File FileName="TSkgViewer/TsEngine/HttpWrapper/HttpWrapper.cs" Line="14" Column="27" />
+      <File FileName="TSkgViewer/TsEngine/Serials/TsSerialHelper.cs" Line="13" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

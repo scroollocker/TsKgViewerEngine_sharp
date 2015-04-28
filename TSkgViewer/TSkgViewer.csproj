@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E3E0B2AC-E6F6-40B9-97E4-FD4D917BEBC6}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TSkgViewer</RootNamespace>
+    <AssemblyName>TSkgViewer</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="CsQuery">
+      <HintPath>..\CsQuery.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TsEngine\HttpWrapper\HttpWrapper.cs" />
+    <Compile Include="TsEngine\Utils\TsUtils.cs" />
+    <Compile Include="TsEngine\Utils\TsSortEnum.cs" />
+    <Compile Include="TsEngine\Categories\TsCategory.cs" />
+    <Compile Include="TsEngine\Categories\TsCategoryItem.cs" />
+    <Compile Include="TsEngine\Serials\TsSerialHelper.cs" />
+    <Compile Include="TsEngine\Categories\TsCategoryHelper.cs" />
+    <Compile Include="TsEngine\Serials\TsSerialListItem.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="HttpWrapper\" />
+    <Folder Include="TsEngine\" />
+    <Folder Include="TsEngine\HttpWrapper\" />
+    <Folder Include="TsEngine\Utils\" />
+    <Folder Include="TsEngine\Categories\" />
+    <Folder Include="TsEngine\Serials\" />
+  </ItemGroup>
+</Project>
